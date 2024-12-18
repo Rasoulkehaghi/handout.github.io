@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data mining for decision making",
+    "section": "",
+    "text": "Question: In this era, how often do you think data doubles in the world?\nAnswer: Currently, the amount of accessible data doubles every two years (Open Science Conference, 2014). A capable organization is one that can manage its information effectively."
+  },
+  {
+    "objectID": "index.html#steps-in-k-means-clustering",
+    "href": "index.html#steps-in-k-means-clustering",
+    "title": "Data mining for decision making",
+    "section": "Steps in K-means Clustering:",
+    "text": "Steps in K-means Clustering:\n\nChoosing k: Decide on the number of clusters you want to form.\nInitializing Centroids: Randomly select k data points as initial centroids.\nAssigning Data Points: Each data point is assigned to the nearest centroid, forming clusters.\nUpdating Centroids: Calculate new centroids as the average of all points in each cluster."
+  },
+  {
+    "objectID": "index.html#lets-solve-a-clustering-example-together-step-by-step",
+    "href": "index.html#lets-solve-a-clustering-example-together-step-by-step",
+    "title": "Data mining for decision making",
+    "section": "Let’s solve a clustering example together step by step:",
+    "text": "Let’s solve a clustering example together step by step:\n\nPlease load sample dataset: (The iris dataset is a built-in dataset in R that contains measurements on 4 different attributes (in centimeters) for 50 flowers from 3 different species.)\n\n# R code example\ndata(iris)\n\nNow we want to divide the data into 3 clusters based on two of the 4 features:\n\niris_data &lt;- iris[, 1:2]\nset.seed(123)\nkmeans_result &lt;- kmeans(iris_data, centers = 3)\n\nInstall ggplot2 package and visualize results:\n\nprint(kmeans_result)\ninstall.packages(\"ggplot2\")\nlibrary(ggplot2)\niris$Cluster &lt;- as.factor(kmeans_result$cluster)\nggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Cluster)) +\ngeom_point(size = 3) +\nlabs(title = \"K-Means Clustering on Iris Data\", x = \"Sepal Length\", y = \"Sepal Width\")\nThe output is as follows:\nFigure 5:Clustering example results"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]
